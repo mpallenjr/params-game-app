@@ -2,3 +2,14 @@ GET http://localhost:3000/query.json?name=alex
 
 ###
 GET http://localhost:3000/guess.json?number=30
+
+###
+GET http://localhost:3000/url_segment_parameter/california/pasadena.json
+
+###
+
+GET http://localhost:3000/add_the_numbers/2/9.json
+
+###
+
+GET http://localhost:3000/guess/30.json

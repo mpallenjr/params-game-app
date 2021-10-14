@@ -28,5 +28,19 @@ class ParamController < ApplicationController
     render json: {pring: message}
   end
 
+  def segment
+    state = params["state"]
+    city = params["city"]
+    render json: {state: state, city: city}
+  end
+
+  def addition
+    number1 = params["number1"].to_i
+    number2 = params["number2"].to_i
+    sum = number1 + number2
+    render json: {Total: sum}
+  end
+
+
 end
 
