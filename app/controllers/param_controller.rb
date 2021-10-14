@@ -1,10 +1,19 @@
 class ParamController < ApplicationController
 
-  def hello
-  render json: {message: "hello"}
+  def query
+    input = params["name"].upcase
+    p input
+    
+    if input[0] == "A"
+    message = "your name starts with a"
+    else
+    message = "your name is okay"
+    end
+    
+    render json: {message:input, print:message}
 
-  
   end
 
 
 end
+
