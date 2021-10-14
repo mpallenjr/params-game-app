@@ -1,1 +1,4 @@
 GET http://localhost:3000/query.json?name=alex
+
+###
+GET http://localhost:3000/guess.json?number=30
